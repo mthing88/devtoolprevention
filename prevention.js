@@ -59,11 +59,4 @@ document.addEventListener('keydown', function(event) {
 
 }, false); // Use capture phase to try and catch it earlier
 
-// --- Prevent Right Click Context Menu (often used for Inspect Element) ---
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-  alert("Right-clicking is disabled on this site.");
-  return false;
-});
-
 console.log("DevTools detection listeners active."); // For your own debugging
